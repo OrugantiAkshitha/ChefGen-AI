@@ -164,13 +164,41 @@ Supports:
 
 ---
 
-## 📸 Screenshots
+## 📸 Project Screenshots
 
-![Landing Page](screenshots/landing-page.png)
+### 🏠 1. Landing Page
 
-![Ingredients Page](screenshots/ingredients-page.png)
+![Landing Page](./screenshots/01-landing-page.png)
 
-![Recipe Page](screenshots/recipe-page.png)
+---
+
+### 🥗 2. Ingredients Page
+
+![Ingredients Page](./screenshots/02-ingredients-page.png)
+
+---
+
+### 🍽️ 3. Recipe Cards
+
+![Recipe Cards](./screenshots/03-recipe-cards.png)
+
+---
+
+### 📖 4. Recipe Details Overview
+
+![Recipe Details Overview](./screenshots/04-recipe-details-overview.png)
+
+---
+
+### 👨‍🍳 5. Cooking Steps & Nutrition
+
+![Cooking Steps & Nutrition](./screenshots/05-recipe-details-cooking.png)
+
+---
+
+### 🤖 6. AI Confidence & Footer
+
+![AI Confidence & Footer](./screenshots/06-ai-confidence-footer.png)
 
 ---
 

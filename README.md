@@ -1,46 +1,14 @@
 ﻿# 🍳 ChefGen AI
 
-AI-powered Smart Recipe Generator using **Generative AI & Cloud Computing**
+> **AI-Powered Smart Recipe Generator using Generative AI & Cloud Computing**
+
+ChefGen AI is an intelligent web application that helps users create delicious recipes using the ingredients available at home. Powered by **Google Gemini AI**, it generates complete recipes with cooking instructions, nutrition information, chef tips, and more.
 
 ---
 
 ## 🌐 Live Demo
 
-👉 **https://orugantiakshitha.github.io/ChefGen-AI/**
-
----
-
-## 📸 App Demo
-
-<p align="center">
-  <img src="./screenshots/01-landing-page.png" width="900">
-</p>
-
-<p align="center">
-  <img src="./screenshots/02-ingredients-page.png" width="900">
-</p>
-
-<p align="center">
-  <img src="./screenshots/03-recipe-cards.png" width="900">
-</p>
-
-<p align="center">
-  <img src="./screenshots/04-recipe-details-overview.png" width="900">
-</p>
-
-<p align="center">
-  <img src="./screenshots/05-recipe-details-cooking.png" width="900">
-</p>
-
-<p align="center">
-  <img src="./screenshots/06-ai-confidence-footer.png" width="900">
-</p>
-
----
-
-## 🌍 Live Demo →
-
-**https://orugantiakshitha.github.io/ChefGen-AI/**
+🔗 **https://orugantiakshitha.github.io/ChefGen-AI/**
 
 ---
 
@@ -53,29 +21,29 @@ AI-powered Smart Recipe Generator using **Generative AI & Cloud Computing**
 - Installation
 - Configuration
 - Running the Project
-- Screenshots
 - Future Enhancements
 - Deployment
+- Team
 - License
-- Author
 
 ---
 
 # 🍽 About
 
-ChefGen AI is a modern AI-powered recipe generator that helps users discover recipes using ingredients available at home.
+ChefGen AI is an AI-powered recipe generator designed to make cooking easier and smarter.
 
-Simply enter your available ingredients, and ChefGen AI intelligently creates:
+Users simply enter the ingredients they have at home, and the application uses **Google Gemini AI** to generate multiple recipe suggestions. After selecting a recipe, users receive:
 
-- Complete recipes
-- Step-by-step cooking instructions
-- Cooking time
-- Difficulty level
-- Nutrition information
-- Chef recommendations
-- Cooking tips
+- 🍲 Complete Recipe
+- 📝 Step-by-Step Cooking Instructions
+- ⏱ Preparation & Cooking Time
+- 👨‍🍳 Difficulty Level
+- 🍽 Servings
+- 🥗 Nutrition Information
+- 💡 Smart Chef Tips
+- 🌟 AI Confidence Message
 
-Powered by **Google Gemini 2.5 Flash**, the application generates context-aware recipes while providing a local fallback mode when an API key is unavailable.
+The application assumes common pantry staples such as **salt, oil, water, and basic spices** are already available, so users only need to enter the main ingredients.
 
 ---
 
@@ -83,21 +51,21 @@ Powered by **Google Gemini 2.5 Flash**, the application generates context-aware 
 
 ## 🏠 Beautiful Landing Page
 
-- Full-screen hero section
-- Modern glassmorphism design
-- Responsive layout
-- Smooth animations
-- Attractive orange theme
+- Modern Glassmorphism UI
+- Responsive Hero Section
+- Attractive Orange Theme
+- Smooth Animations
+- Mobile-Friendly Design
 
 ---
 
 ## 🥗 Ingredient Input
 
-- Add multiple ingredients
-- Remove ingredients
-- Input validation
-- Animated ingredient chips
-- Smart pantry assumptions
+- Add Multiple Ingredients
+- Smart Ingredient Validation
+- Interactive Ingredient Chips
+- Pantry Staples Assumption
+- Responsive Search Interface
 
 ---
 
@@ -125,141 +93,116 @@ Generates:
 
 ---
 
-## 🍛 Smart Recipe Logic
+## 🍛 Smart Recipe Suggestions
 
-Examples:
+Example combinations:
 
-| Ingredients | Generated Recipe |
-|-------------|-----------------|
-| Milk + Coffee | Coffee |
-| Milk + Sugar | Sweet Milk Drink |
-| Tomato + Onion | Tomato Curry |
+| Ingredients | Suggested Recipe |
+|-------------|------------------|
 | Egg + Bread | Egg Toast |
+| Tomato + Onion | Tomato Curry |
+| Milk + Coffee | Coffee |
 | Rice + Vegetables | Fried Rice |
 | Chicken + Spices | Chicken Curry |
-
-Masala Tea is only generated if ingredients such as ginger or cardamom are included.
+| Maggi + Egg | Egg Maggi |
 
 ---
 
-## 🧠 Pantry Staples
+## 🧠 Smart Pantry Assumption
 
-The application automatically assumes common pantry ingredients are available:
+ChefGen AI automatically assumes these ingredients are available:
 
 - Salt
 - Water
 - Oil
 - Pepper
-- Basic spices
+- Common Spices
 
-Users only need to enter their primary ingredients.
+Users only need to enter the primary ingredients.
 
 ---
 
-## 📄 Recipe Details
+## 📄 Detailed Recipe Information
 
-Every recipe includes:
+Each recipe includes:
 
-- Recipe Image Placeholder
+- Recipe Title
 - Description
-- Ingredients List
+- Ingredients
 - Cooking Steps
+- Preparation Time
+- Cooking Time
+- Total Time
+- Difficulty
+- Servings
+- Estimated Cost
 - Nutrition Facts
-- Cooking Tips
-- Chef Suggestions
+- Health Assessment
+- AI Confidence Score
+- Chef Recommendation
+- Cooking Quote
 
 ---
 
 ## 🔄 Offline Fallback Mode
 
-If no Gemini API Key is configured:
+If a Gemini API key is not configured:
 
 - Loads sample recipes
-- Fully functional demonstration
-- No errors
-- Great for testing
+- Fully functional demo mode
+- Suitable for testing
+- No application errors
 
 ---
 
 ## 📱 Responsive Design
 
-Supports:
+Optimized for:
 
 - Desktop
 - Laptop
 - Tablet
-- Mobile
+- Mobile Devices
 
 ---
 
-## 📸 Project Screenshots
+## 🎨 User Interface Features
 
-### 🏠 1. Landing Page
-
-![Landing Page](./screenshots/01-landing-page.png)
-
----
-
-### 🥗 2. Ingredients Page
-
-![Ingredients Page](./screenshots/02-ingredients-page.png)
-
----
-
-### 🍽️ 3. Recipe Cards
-
-![Recipe Cards](./screenshots/03-recipe-cards.png)
-
----
-
-### 📖 4. Recipe Details Overview
-
-![Recipe Details Overview](./screenshots/04-recipe-details-overview.png)
-
----
-
-### 👨‍🍳 5. Cooking Steps & Nutrition
-
-![Cooking Steps & Nutrition](./screenshots/05-recipe-details-cooking.png)
-
----
-
-### 🤖 6. AI Confidence & Footer
-
-![AI Confidence & Footer](./screenshots/06-ai-confidence-footer.png)
-
----
-
-## 🎨 UI Features
-
-- Glassmorphism
-- Hover Animations
-- Smooth Transitions
-- Loading Spinner
+- Glassmorphism Design
 - Gradient Buttons
-- Modern Cards
+- Hover Animations
+- Loading Spinner
+- Modern Recipe Cards
 - Responsive Navigation
+- Blur Background Effects
+- Smooth Page Transitions
 
 ---
 
 # 🛠 Technology Stack
 
-### Frontend
+## Frontend
 
 - HTML5
 - CSS3
 - Vanilla JavaScript (ES6)
 
-### AI
+## Generative AI
 
 - Google Gemini 2.5 Flash API
 
-### Hosting
+## Cloud Computing
 
+- Google AI Studio
+- Gemini API
+
+## Hosting
+
+- GitHub Pages
 - Firebase Hosting
 - Live Server
 
-### Development Tools
+## Development Tools
 
 - Visual Studio Code
 - Git
@@ -269,62 +212,60 @@ Supports:
 
 # 📂 Project Structure
 
-```
+```text
 ChefGen-AI/
 │
-├── index.html
-├── ingredients.html
-├── recipe.html
+├── assets/
+│   └── background.jpg
 │
 ├── css/
 │   ├── style.css
 │   ├── ingredients.css
 │   └── recipe.css
 │
-├── js/
-│   ├── app.js
-│   ├── ingredients.js
-│   ├── recipe.js
-│   ├── gemini.js
-│   └── config.js
-│
 ├── data/
 │   └── sampleRecipes.json
 │
-├── assets/
-│   ├── background.jpg
-│   ├── logo.png
-│   └── icons/
+├── js/
+│   ├── app.js
+│   ├── config.js
+│   ├── gemini.js
+│   ├── ingredients.js
+│   └── recipe.js
 │
-├── README.md
-└── firebase.json
+├── index.html
+├── ingredients.html
+├── recipe.html
+├── firebase.json
+├── .gitignore
+└── README.md
 ```
 
 ---
 
 # ⚙ Installation
 
-## Clone Repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/ChefGen-AI.git
+git clone https://github.com/YOUR_GITHUB_USERNAME/ChefGen-AI.git
 ```
 
-Open the project:
+Navigate to the project folder:
 
 ```bash
 cd ChefGen-AI
 ```
 
-Open in VS Code.
+Open the project in **Visual Studio Code**.
 
 ---
 
-# 🔑 Configure Gemini API
+# 🔑 Configuration
 
 Open:
 
-```
+```text
 js/config.js
 ```
 
@@ -334,13 +275,13 @@ Replace:
 const API_KEY = "YOUR_GEMINI_API_KEY";
 ```
 
-with
+with:
 
 ```javascript
 const API_KEY = "YOUR_ACTUAL_GEMINI_API_KEY";
 ```
 
-You can obtain an API key from:
+You can obtain a Gemini API key from:
 
 https://aistudio.google.com/
 
@@ -350,17 +291,11 @@ https://aistudio.google.com/
 
 ### Method 1 (Recommended)
 
-Install Live Server extension.
+1. Install the **Live Server** extension in VS Code.
+2. Open `index.html`.
+3. Right-click and select:
 
-Right Click
-
-```
-index.html
-```
-
-Click
-
-```
+```text
 Open with Live Server
 ```
 
@@ -368,39 +303,20 @@ Open with Live Server
 
 ### Method 2
 
-Deploy to Firebase Hosting.
-
----
-
-# 📷 Screenshots
-
-Add screenshots here.
-
-Example:
-
-```
-screenshots/
-
-landing-page.png
-
-ingredients-page.png
-
-recipe-page.png
-```
+Deploy the application using **Firebase Hosting**.
 
 ---
 
 # 🚀 Future Enhancements
 
-- User Login
+- User Authentication
 - Favorite Recipes
-- Save Recipe History
+- Recipe History
 - Dark Mode
 - Voice Input
 - AI Image Generation
 - Shopping List Generator
 - Meal Planner
-- Nutritional Analysis
 - Multi-language Support
 - Recipe Sharing
 - PDF Recipe Download
@@ -410,27 +326,35 @@ recipe-page.png
 
 ---
 
-# 🌐 Firebase Deployment
+# ☁ Deployment
 
-Install Firebase CLI
+## GitHub Pages
+
+Push your project to GitHub and enable **GitHub Pages** from the repository settings.
+
+---
+
+## Firebase Hosting
+
+Install Firebase CLI:
 
 ```bash
 npm install -g firebase-tools
 ```
 
-Login
+Login:
 
 ```bash
 firebase login
 ```
 
-Initialize
+Initialize:
 
 ```bash
 firebase init
 ```
 
-Deploy
+Deploy:
 
 ```bash
 firebase deploy
@@ -438,24 +362,34 @@ firebase deploy
 
 ---
 
-# 📜 License
+# 👥 Team
 
-This project is created for educational and learning purposes.
+## Team Name
 
-Feel free to modify and enhance it.
+**GenAI Pioneers**
+
+### Team Members
+
+- ORUGANTI AKSHITHA
+- Team Member 2
+- Team Member 3
+
+**IBM SkillsBuild Internship**
+
+**Theme:** Generative AI & Cloud Computing
 
 ---
 
-# 👨‍💻 Author
+# 📜 License
 
-**Team GenAI Pioneers**
+This project is developed for educational purposes as part of the **IBM SkillsBuild Internship Program**.
 
-Developed as an AI-powered Smart Recipe Generator using Google Gemini.
+Feel free to learn from, modify, and enhance the project.
 
 ---
 
 # ⭐ Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+If you found this project useful, please consider giving it a ⭐ on GitHub.
 
-Happy Cooking! 🍳
+**Happy Cooking with ChefGen AI! 🍳🤖**

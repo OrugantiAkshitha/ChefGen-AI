@@ -248,7 +248,7 @@ ChefGen-AI/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/ChefGen-AI.git
+git clone https://github.com/OrugantiAkshitha/ChefGen-AI.git
 ```
 
 Navigate to the project folder:
@@ -371,12 +371,16 @@ firebase deploy
 ### Team Members
 
 - ORUGANTI AKSHITHA
-- Team Member 2
-- Team Member 3
+- Talluri Chandana
+- Koka Navya Sree
+
+---
 
 **IBM SkillsBuild Internship**
 
-**Theme:** Generative AI & Cloud Computing
+**Project Theme:** Generative AI & Cloud Computing
+
+**Project Title:** ChefGen AI – AI-Powered Smart Recipe Generator
 
 ---
 

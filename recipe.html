@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefGen AI - Recipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/recipe.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="page-header">
+            <div>
+                <h1>Recipe Details</h1>
+                <p class="subtitle">A complete recipe built by ChefGen AI for your selected dish.</p>
+            </div>
+            <a class="back-link" href="ingredients.html"><i class="fa-solid fa-chevron-left"></i> Generate Another Recipe</a>
+        </div>
+        <div id="recipeContent" class="recipe-card recipe-loading">
+            <div class="page-loader"></div>
+            <p class="loading-text">Preparing your recipe...</p>
+        </div>
+        <div id="toast" class="toast hidden" role="status"></div>
+        <footer class="site-footer">
+            <div>Developed by Team GenAI Pioneers</div>
+        </footer>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/gemini.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/recipe.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefGen AI - Ingredients</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/ingredients.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="page-header">
+            <div>
+                <h1><i class="fa-solid fa-utensils"></i> ChefGen AI</h1>
+                <p class="subtitle">Enter your main ingredients and let AI build chef-quality recipes.</p>
+            </div>
+            <a class="back-link" href="index.html"><i class="fa-solid fa-chevron-left"></i> Home</a>
+        </div>
+        <div id="pageGreeting" class="page-greeting"></div>
+        <div class="glass-card">
+            <h2>Only enter the main ingredients</h2>
+            <div class="info-box">
+                <strong>Pantry staples such as</strong> salt, oil, basic spices and other common ingredients are already assumed to be available.
+                <br><br>Only enter the ingredients that you already have on hand.
+            </div>
+            <input id="ingredients" type="text" placeholder="Example: Egg, Onion, Tomato, Paneer" autocomplete="off">
+            <button id="generateBtn" type="button">Generate Recipes</button>
+            <div id="loading" class="loading-panel" aria-live="polite">
+                <div class="loader"></div>
+                <p>👨‍🍳 AI Chef is thinking...</p>
+            </div>
+            <div id="message" class="message"></div>
+            <div id="confidenceMessage" class="confidence-message"></div>
+        </div>
+        <div id="toast" class="toast hidden" role="status"></div>
+        <div id="recipeCount" class="recipe-count"></div>
+        <div id="recipeContainer" class="recipe-grid"></div>
+        <footer class="site-footer">
+            <div>Developed by Team GenAI Pioneers</div>
+        </footer>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/gemini.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/ingredients.js"></script>
+</body>
+</html>

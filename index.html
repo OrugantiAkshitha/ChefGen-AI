@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefGen AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="landing-card">
+            <div class="landing-top">
+                <div class="brand">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>ChefGen AI</span>
+                </div>
+                <div id="landingGreeting" class="hero-greeting"></div>
+            </div>
+            <h1>ChefGen AI</h1>
+            <p class="subtitle">Smart Recipe Generator using Generative AI & Cloud Computing</p>
+            <p class="description">Turn the ingredients you already have into delicious recipes with AI-powered creativity and beautiful cloud-ready presentation.</p>
+            <button id="startBtn" type="button">
+                Start Cooking
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+        <section id="dailyRecipeCard" class="recipe-of-day-card" role="button" tabindex="0">
+            <div class="feature-chip">⭐ Recipe of the Day</div>
+            <div id="recipeDayTitle" class="recipe-day-title">Loading today&apos;s recipe...</div>
+            <p id="recipeDayCopy" class="recipe-day-copy">Tap to explore the recipe &amp; prep steps.</p>
+        </section>
+        <footer class="site-footer">
+            <div>Developed by Team GenAI Pioneers</div>
+        </footer>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/gemini.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

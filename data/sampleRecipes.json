@@ -1,0 +1,114 @@
+﻿[
+    {
+        "name": "Spiced Tomato & Egg Curry",
+        "estimatedTime": "35 mins",
+        "difficulty": "Medium",
+        "servings": "2-3",
+        "preparationTime": "15 mins",
+        "cookingTime": "20 mins",
+        "summary": "A rich tomato and egg curry made with simple pantry staples and fresh spices.",
+        "mainIngredients": ["Eggs", "Tomatoes", "Onion", "Garlic"],
+        "ingredients": ["Eggs", "Tomatoes", "Onion", "Garlic", "Green Chili", "Coriander Powder", "Garam Masala", "Salt", "Oil"],
+        "steps": [
+            "Heat oil and sauté chopped onions until translucent.",
+            "Add garlic, tomatoes, spices and simmer until the sauce thickens.",
+            "Crack eggs into the curry and cook until the whites are firm.",
+            "Garnish with fresh coriander and serve hot with bread or rice."
+        ],
+        "chefTips": [
+            "Use ripe tomatoes for a richer curry base.",
+            "Simmer slowly so the flavors deepen without burning the spices.",
+            "Add a splash of water if the sauce becomes too thick."
+        ],
+        "nutrition": {
+            "Calories": "320 kcal",
+            "Protein": "18g",
+            "Carbs": "14g",
+            "Fat": "20g"
+        }
+    },
+    {
+        "name": "Paneer Tomato Skillet",
+        "estimatedTime": "30 mins",
+        "difficulty": "Easy",
+        "servings": "2-3",
+        "preparationTime": "10 mins",
+        "cookingTime": "20 mins",
+        "summary": "A quick skillet recipe with paneer, tomatoes and warm Indian spices.",
+        "mainIngredients": ["Paneer", "Tomatoes", "Onion"],
+        "ingredients": ["Paneer", "Tomatoes", "Onion", "Ginger Garlic Paste", "Coriander Powder", "Garam Masala", "Salt", "Oil"],
+        "steps": [
+            "Cube the paneer and lightly pan-fry until golden.",
+            "Cook onions, tomatoes and spices into a thick gravy.",
+            "Stir in the paneer cubes and simmer for 5 minutes.",
+            "Finish with fresh coriander and serve warm."
+        ],
+        "chefTips": [
+            "Avoid overcooking paneer to keep it soft and tender.",
+            "Add a pinch of sugar to balance tomato acidity.",
+            "Use a nonstick pan for easier cleanup."
+        ],
+        "nutrition": {
+            "Calories": "360 kcal",
+            "Protein": "20g",
+            "Carbs": "16g",
+            "Fat": "22g"
+        }
+    },
+    {
+        "name": "Vegetable Maggi Stir Fry",
+        "estimatedTime": "18 mins",
+        "difficulty": "Easy",
+        "servings": "1-2",
+        "preparationTime": "5 mins",
+        "cookingTime": "13 mins",
+        "summary": "A playful stir fry that transforms instant noodles into a satisfying vegetable meal.",
+        "mainIngredients": ["Maggi", "Onion", "Tomato"],
+        "ingredients": ["Maggi Noodles", "Onion", "Tomato", "Carrot", "Green Peas", "Chili Powder", "Salt", "Oil"],
+        "steps": [
+            "Boil the noodles until just tender and drain.",
+            "Sauté vegetables with spices until crisp-tender.",
+            "Toss the cooked noodles with the vegetables and seasoning.",
+            "Serve immediately with a squeeze of lemon."
+        ],
+        "chefTips": [
+            "Cook vegetables over high heat to preserve texture.",
+            "Keep the noodles slightly undercooked before stir-frying.",
+            "Add fresh herbs or chili flakes for extra brightness."
+        ],
+        "nutrition": {
+            "Calories": "280 kcal",
+            "Protein": "9g",
+            "Carbs": "42g",
+            "Fat": "10g"
+        }
+    },
+    {
+        "name": "Onion Tomato Egg Scramble",
+        "estimatedTime": "20 mins",
+        "difficulty": "Easy",
+        "servings": "2",
+        "preparationTime": "5 mins",
+        "cookingTime": "15 mins",
+        "summary": "A bright, protein-packed scramble that turns pantry ingredients into a flavorful breakfast or dinner.",
+        "mainIngredients": ["Eggs", "Onion", "Tomato"],
+        "ingredients": ["Eggs", "Onion", "Tomato", "Ginger Garlic Paste", "Chili Powder", "Coriander", "Salt", "Oil"],
+        "steps": [
+            "Sauté onions until soft, then add tomatoes and spices.",
+            "Pour beaten eggs into the pan and stir gently.",
+            "Cook until the eggs are set but still moist.",
+            "Serve with toast or warm flatbread."
+        ],
+        "chefTips": [
+            "Use medium heat to avoid drying out the eggs.",
+            "Finish with fresh coriander or a dash of lemon juice.",
+            "Add a little butter for extra richness."
+        ],
+        "nutrition": {
+            "Calories": "260 kcal",
+            "Protein": "16g",
+            "Carbs": "10g",
+            "Fat": "18g"
+        }
+    }
+]

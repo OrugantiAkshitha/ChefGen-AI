@@ -164,6 +164,16 @@ Supports:
 
 ---
 
+## 📸 Screenshots
+
+![Landing Page](screenshots/landing-page.png)
+
+![Ingredients Page](screenshots/ingredients-page.png)
+
+![Recipe Page](screenshots/recipe-page.png)
+
+---
+
 ## 🎨 UI Features
 
 - Glassmorphism

@@ -1,18 +1,46 @@
 ﻿# 🍳 ChefGen AI
 
-<div align="center">
+AI-powered Smart Recipe Generator using **Generative AI & Cloud Computing**
 
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Gemini](https://img.shields.io/badge/Google-Gemini%202.5%20Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-Hosting-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+---
 
-### AI-Powered Smart Recipe Generator using Google Gemini
+## 🌐 Live Demo
 
-Generate delicious recipes instantly from the ingredients you already have. ChefGen AI uses Google's Gemini AI to create recipes, cooking instructions, nutrition facts, chef tips, and more through a beautiful modern web interface.
+👉 **https://orugantiakshitha.github.io/ChefGen-AI/**
 
-</div>
+---
+
+## 📸 App Demo
+
+<p align="center">
+  <img src="./screenshots/01-landing-page.png" width="900">
+</p>
+
+<p align="center">
+  <img src="./screenshots/02-ingredients-page.png" width="900">
+</p>
+
+<p align="center">
+  <img src="./screenshots/03-recipe-cards.png" width="900">
+</p>
+
+<p align="center">
+  <img src="./screenshots/04-recipe-details-overview.png" width="900">
+</p>
+
+<p align="center">
+  <img src="./screenshots/05-recipe-details-cooking.png" width="900">
+</p>
+
+<p align="center">
+  <img src="./screenshots/06-ai-confidence-footer.png" width="900">
+</p>
+
+---
+
+## 🌍 Live Demo →
+
+**https://orugantiakshitha.github.io/ChefGen-AI/**
 
 ---
 

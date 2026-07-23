@@ -62,6 +62,10 @@ function updatePageGreeting() {
 }
 
 button.addEventListener("click", async () => {
+    if (button.disabled) {
+        return;
+    }
+
     const rawIngredients = input.value.trim();
     recipeContainer.innerHTML = "";
     showMessage("", "info");
@@ -82,11 +86,17 @@ button.addEventListener("click", async () => {
         return;
     }
 
+    button.disabled = true;
     toggleLoading(true);
 
     try {
         const recipes = await generateRecipes(rawIngredients);
         toggleLoading(false);
+
+        if (getLastGeminiError()?.status === 429) {
+            showToast("Gemini quota limit reached. Showing local recipe suggestions instead.", "error");
+            showMessage("Gemini is temporarily rate-limited. Showing local fallback recipes for now.", "error");
+        }
 
         if (!recipes || recipes.length === 0) {
             showMessage("I couldn&apos;t find a good recipe with the current ingredients.", "error");
@@ -97,9 +107,12 @@ button.addEventListener("click", async () => {
         displayRecipeGreeting();
         renderRecipeCards(recipes);
     } catch (error) {
+        console.error("[Ingredients] Recipe generation failed:", error);
         toggleLoading(false);
         showMessage("I couldn&apos;t find a good recipe with the current ingredients.", "error");
         displayNoRecipeState();
+    } finally {
+        button.disabled = false;
     }
 });
 

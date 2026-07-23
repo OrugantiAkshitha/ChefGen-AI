@@ -1,0 +1,17 @@
+version: 1.0
+services:
+  - serviceName: chefgen-ai
+    source:
+      repositoryUrl: https://github.com/your-user/your-repo
+      branch: main
+    build:
+      type: image
+      imageName: chefgen-ai
+    env:
+      - name: APP_ENV
+        value: production
+      - name: PORT
+        value: "8000"
+      - name: GEMINI_API_KEY
+        valueFrom:
+          secretName: gemini-api-key

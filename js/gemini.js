@@ -15,36 +15,64 @@
     }
 }
 
+let geminiRequestInFlight = false;
+let lastGeminiError = null;
+
+function clearLastGeminiError() {
+    lastGeminiError = null;
+}
+
+function getLastGeminiError() {
+    return lastGeminiError;
+}
+
 async function callGemini(prompt) {
-    if (!API_KEY) {
+    const baseUrl = typeof API_BASE_URL !== "undefined" ? API_BASE_URL.replace(/\/$/, "") : "";
+    const endpoint = `${baseUrl}/api/ai/generate`;
+
+    if (geminiRequestInFlight) {
+        console.warn("[Gemini] Skipping duplicate request because one request is already in progress.");
         return null;
     }
 
-    const body = {
-        model: "gemini-2.5-flash",
-        input: prompt,
-        max_output_tokens: 900,
-        temperature: 0.9
-    };
+    geminiRequestInFlight = true;
+    clearLastGeminiError();
 
     try {
-        const response = await fetch("https://api.openai.com/v1/responses", {
+        const response = await fetch(endpoint, {
             method: "POST",
             headers: {
-                "Content-Type": "application/json",
-                "Authorization": `Bearer ${API_KEY}`
+                "Content-Type": "application/json"
             },
-            body: JSON.stringify(body)
+            body: JSON.stringify({
+                prompt,
+                stream: false
+            })
         });
 
+        const responseBody = await response.json().catch(() => ({}));
+
         if (!response.ok) {
+            const backendMessage = responseBody?.detail || "Unknown backend error";
+            lastGeminiError = {
+                status: response.status,
+                detail: backendMessage
+            };
+            console.error(`[Gemini][Frontend] Backend responded with HTTP ${response.status}: ${backendMessage}`);
             return null;
         }
 
-        const json = await response.json();
-        return parseResponseText(json);
+        const json = responseBody;
+        return json.response || null;
     } catch (error) {
+        lastGeminiError = {
+            status: 500,
+            detail: error?.message || "Request failed"
+        };
+        console.error("[Gemini][Frontend] Request failed:", error);
         return null;
+    } finally {
+        geminiRequestInFlight = false;
     }
 }
 

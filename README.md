@@ -1,380 +1,298 @@
-﻿# 🍳 ChefGen AI
+﻿# ChefGen AI
 
-> **AI-Powered Smart Recipe Generator using Generative AI & Cloud Computing**
+ChefGen AI is a full-stack recipe generation application that turns a list of ingredients into recipe suggestions, detailed recipe pages, and nutrition-friendly cooking guidance using Google Gemini as the AI backend.
 
-ChefGen AI is an intelligent web application that helps users create delicious recipes using the ingredients available at home. Powered by **Google Gemini AI**, it generates complete recipes with cooking instructions, nutrition information, chef tips, and more.
-
----
-
-## 🌐 Live Demo
-
-🔗 **https://orugantiakshitha.github.io/ChefGen-AI/**
+The project combines:
+- a responsive static frontend built with HTML, CSS, and vanilla JavaScript
+- a FastAPI backend that securely handles Gemini requests
+- environment-based configuration for API keys and deployment settings
+- local fallback recipe generation when the AI service is unavailable or quota-limited
 
 ---
 
-# 📖 Table of Contents
+## Project Summary
 
-- About
-- Features
-- Technology Stack
-- Project Structure
-- Installation
-- Configuration
-- Running the Project
-- Future Enhancements
-- Deployment
-- Team
-- License
+ChefGen AI helps users:
+- enter ingredients they already have
+- generate recipe ideas instantly
+- open a detailed recipe page for a selected dish
+- explore preparation, cooking, nutrition, and health assessment details
+- receive a resilient fallback experience when Gemini quota is unavailable
+
+The application is designed to preserve the original UI and user experience while moving AI access behind a production-style backend for better security and control.
 
 ---
 
-# 🍽 About
+## Live Demo
 
-ChefGen AI is an AI-powered recipe generator designed to make cooking easier and smarter.
-
-Users simply enter the ingredients they have at home, and the application uses **Google Gemini AI** to generate multiple recipe suggestions. After selecting a recipe, users receive:
-
-- 🍲 Complete Recipe
-- 📝 Step-by-Step Cooking Instructions
-- ⏱ Preparation & Cooking Time
-- 👨‍🍳 Difficulty Level
-- 🍽 Servings
-- 🥗 Nutrition Information
-- 💡 Smart Chef Tips
-- 🌟 AI Confidence Message
-
-The application assumes common pantry staples such as **salt, oil, water, and basic spices** are already available, so users only need to enter the main ingredients.
+The frontend is served locally and can also be deployed to static hosting or containerized environments.
 
 ---
 
-# ✨ Features
+## Core Features
 
-## 🏠 Beautiful Landing Page
-
-- Modern Glassmorphism UI
-- Responsive Hero Section
-- Attractive Orange Theme
-- Smooth Animations
-- Mobile-Friendly Design
-
----
-
-## 🥗 Ingredient Input
-
-- Add Multiple Ingredients
-- Smart Ingredient Validation
-- Interactive Ingredient Chips
-- Pantry Staples Assumption
-- Responsive Search Interface
+- Ingredient-driven recipe generation
+- AI recipe cards with recipe metadata
+- Recipe detail page rendering
+- Fallback recipe generation when AI is unavailable
+- Secure backend-based Gemini integration
+- Configurable environment variables
+- FastAPI health endpoint and production-ready API structure
+- Docker and AWS App Runner deployment support
+- Rate-limit aware backend error handling
 
 ---
 
-## 🤖 AI Recipe Generation
+## Architecture
 
-Powered by **Google Gemini 2.5 Flash**
+### Frontend
+- Static pages: `index.html`, `ingredients.html`, `recipe.html`
+- Styling: `css/`
+- Browser logic: `js/`
 
-Generates:
+### Backend
+- FastAPI application: `backend/app/main.py`
+- Environment configuration: `backend/app/settings.py`
+- Runtime dependency list: `backend/requirements.txt`
 
-- Recipe Name
-- Description
-- Ingredients
-- Step-by-Step Instructions
-- Preparation Time
-- Cooking Time
-- Total Time
-- Difficulty
-- Servings
-- Calories
-- Protein
-- Carbohydrates
-- Fat
-- Chef Tips
-- Recipe Variations
+### AI Integration Flow
+1. The browser sends a request to the local backend API.
+2. The backend reads the Gemini API key and model from environment variables.
+3. The backend sends the request to Google Gemini.
+4. The result is returned to the frontend.
+5. If the Gemini service is unavailable or rate-limited, the UI uses a local fallback recipe generation path.
 
 ---
 
-## 🍛 Smart Recipe Suggestions
+## Technology Stack
 
-Example combinations:
-
-| Ingredients | Suggested Recipe |
-|-------------|------------------|
-| Egg + Bread | Egg Toast |
-| Tomato + Onion | Tomato Curry |
-| Milk + Coffee | Coffee |
-| Rice + Vegetables | Fried Rice |
-| Chicken + Spices | Chicken Curry |
-| Maggi + Egg | Egg Maggi |
-
----
-
-## 🧠 Smart Pantry Assumption
-
-ChefGen AI automatically assumes these ingredients are available:
-
-- Salt
-- Water
-- Oil
-- Pepper
-- Common Spices
-
-Users only need to enter the primary ingredients.
-
----
-
-## 📄 Detailed Recipe Information
-
-Each recipe includes:
-
-- Recipe Title
-- Description
-- Ingredients
-- Cooking Steps
-- Preparation Time
-- Cooking Time
-- Total Time
-- Difficulty
-- Servings
-- Estimated Cost
-- Nutrition Facts
-- Health Assessment
-- AI Confidence Score
-- Chef Recommendation
-- Cooking Quote
-
----
-
-## 🔄 Offline Fallback Mode
-
-If a Gemini API key is not configured:
-
-- Loads sample recipes
-- Fully functional demo mode
-- Suitable for testing
-- No application errors
-
----
-
-## 📱 Responsive Design
-
-Optimized for:
-
-- Desktop
-- Laptop
-- Tablet
-- Mobile Devices
-
----
-
-## 🎨 User Interface Features
-
-- Glassmorphism Design
-- Gradient Buttons
-- Hover Animations
-- Loading Spinner
-- Modern Recipe Cards
-- Responsive Navigation
-- Blur Background Effects
-- Smooth Page Transitions
-
----
-
-# 🛠 Technology Stack
-
-## Frontend
-
+### Frontend
 - HTML5
 - CSS3
-- Vanilla JavaScript (ES6)
+- Vanilla JavaScript
 
-## Generative AI
+### Backend
+- Python
+- FastAPI
+- Uvicorn
+- Pydantic
+- python-dotenv
+- Requests
 
-- Google Gemini 2.5 Flash API
+### AI
+- Google Gemini Developer API
+- Model configuration via environment variables
 
-## Cloud Computing
-
-- Google AI Studio
-- Gemini API
-
-## Hosting
-
-- GitHub Pages
-- Firebase Hosting
-- Live Server
-
-## Development Tools
-
-- Visual Studio Code
-- Git
-- GitHub
+### Deployment
+- Docker
+- Docker Compose
+- AWS App Runner
+- Firebase hosting support for static frontend assets
 
 ---
 
-# 📂 Project Structure
+## Project Structure
 
 ```text
 ChefGen-AI/
-│
-├── assets/
-│   └── background.jpg
-│
-├── css/
-│   ├── style.css
-│   ├── ingredients.css
-│   └── recipe.css
-│
-├── data/
-│   └── sampleRecipes.json
-│
-├── js/
-│   ├── app.js
-│   ├── config.js
-│   ├── gemini.js
-│   ├── ingredients.js
-│   └── recipe.js
-│
+├── app-runner.yaml
+├── docker-compose.yml
+├── Dockerfile
+├── firebase.json
 ├── index.html
 ├── ingredients.html
 ├── recipe.html
-├── firebase.json
-├── .gitignore
+├── assets/
+├── css/
+├── data/
+├── js/
+├── backend/
+│   ├── README.md
+│   ├── requirements.txt
+│   └── app/
+│       ├── __init__.py
+│       ├── main.py
+│       └── settings.py
 └── README.md
 ```
 
 ---
 
-# ⚙ Installation
+## Setup
 
-Clone the repository:
-
-```bash
-git clone https://github.com/OrugantiAkshitha/ChefGen-AI.git
-```
-
-Navigate to the project folder:
+### 1. Clone the repository
 
 ```bash
+git clone <repository-url>
 cd ChefGen-AI
 ```
 
-Open the project in **Visual Studio Code**.
+### 2. Create the Python environment
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r backend/requirements.txt
+```
+
+### 3. Configure environment variables
+
+Copy the environment template if needed:
+
+```bash
+copy .env.example .env
+```
+
+Then update the file with your values:
+
+```env
+APP_NAME=ChefGen AI
+APP_ENV=development
+HOST=127.0.0.1
+PORT=8000
+GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_MODEL=gemini-2.0-flash
+ALLOWED_ORIGINS=*
+```
+
+Important notes:
+- `GEMINI_API_KEY` must be set on the backend server.
+- `GEMINI_MODEL` should use a supported Google Gemini model name.
+- Do not expose the API key in browser-side JavaScript.
 
 ---
 
-# 🔑 Configuration
+## Running the Project
 
-Open:
+### Start the backend
+
+```bash
+python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000
+```
+
+### Health check
+
+```bash
+http://127.0.0.1:8000/api/health
+```
+
+Expected response shape:
+
+```json
+{
+  "status": "ok",
+  "app": "ChefGen AI",
+  "environment": "development",
+  "model": "gemini-2.0-flash"
+}
+```
+
+### Start the frontend
+
+Use any static file server such as:
+- VS Code Live Server
+- Python static server
+- Firebase hosting
+- Docker container hosting
+
+Example:
+
+```bash
+python -m http.server 8080
+```
+
+Then open the app in a browser at:
 
 ```text
-js/config.js
-```
-
-Replace:
-
-```javascript
-const API_KEY = "YOUR_GEMINI_API_KEY";
-```
-
-with:
-
-```javascript
-const API_KEY = "YOUR_ACTUAL_GEMINI_API_KEY";
-```
-
-You can obtain a Gemini API key from:
-
-https://aistudio.google.com/
-
----
-
-# ▶ Running the Project
-
-### Method 1 (Recommended)
-
-1. Install the **Live Server** extension in VS Code.
-2. Open `index.html`.
-3. Right-click and select:
-
-```text
-Open with Live Server
+http://127.0.0.1:8080
 ```
 
 ---
 
-### Method 2
+## Gemini Integration Notes
 
-Deploy the application using **Firebase Hosting**.
+### Supported behavior
+- The frontend does not call Google Gemini directly.
+- The frontend sends the prompt to the FastAPI backend.
+- The backend holds the Google API key and performs the request securely.
 
----
+### Current model guidance
+The backend is configured to use a supported Gemini model name via `GEMINI_MODEL`.
 
-# 🚀 Future Enhancements
-
-- User Authentication
-- Favorite Recipes
-- Recipe History
-- Dark Mode
-- Voice Input
-- AI Image Generation
-- Shopping List Generator
-- Meal Planner
-- Multi-language Support
-- Recipe Sharing
-- PDF Recipe Download
-- Barcode Ingredient Scanner
-- OCR Ingredient Detection
-- Food Waste Reduction Suggestions
+### Runtime behavior
+- If the Gemini API key is missing, the backend returns a clear server-side error.
+- If Google returns a quota or rate-limit response such as `429 Too Many Requests`, the backend retries with backoff and surfaces a clear error message.
+- The frontend falls back to local recipe generation when AI generation is unavailable.
 
 ---
 
-# ☁ Deployment
+## Docker and Deployment
 
-## GitHub Pages
-
-Push your project to GitHub and enable **GitHub Pages** from the repository settings.
-
----
-
-## Firebase Hosting
-
-Install Firebase CLI:
+### Docker Compose
 
 ```bash
-npm install -g firebase-tools
+docker-compose up --build
 ```
 
-Login:
+### Docker
 
 ```bash
-firebase login
+docker build -t chefgen-ai .
+docker run -p 8000:8000 --env-file .env chefgen-ai
 ```
 
-Initialize:
+### AWS App Runner
 
-```bash
-firebase init
-```
-
-Deploy:
-
-```bash
-firebase deploy
-```
+The repository includes `app-runner.yaml` for deployment-oriented configuration.
 
 ---
 
-# 👥 Team
+## Troubleshooting
 
-## Team Name
+### Gemini returns 404
+- Check that the configured `GEMINI_MODEL` is currently supported by Google.
+- Avoid deprecated model names.
 
-**GenAI Pioneers**
+### Gemini returns 429
+- The API key has hit a quota or rate-limit threshold.
+- Retry later or use a key with available quota.
+- The app will gracefully fall back locally if the AI service is temporarily unavailable.
+
+### Gemini returns 401 or 403
+- Verify the API key is valid.
+- Ensure the backend environment has the key loaded correctly.
+
+### Gemini returns 400 or 500
+- Review the server logs and the exact prompt payload.
+- Confirm the backend request body matches the current Gemini Developer API format.
+
+---
+
+## Production-Readiness Notes
+
+This project has been updated to follow a more production-ready pattern:
+- server-side secret handling
+- environment-based configuration
+- backend API route structure
+- secure AI proxy flow
+- deployment files for Docker and AWS App Runner
+- graceful fallback behavior
+
+---
+
+## Team
+
+### Team Name
+**Team GenAI Pioneers**
 
 ### Team Members
-
 - ORUGANTI AKSHITHA
 - Talluri Chandana
 - Koka Navya Sree
 
 ---
+
+## Internship
 
 **IBM SkillsBuild Internship**
 

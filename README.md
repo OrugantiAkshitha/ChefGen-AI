@@ -25,7 +25,19 @@ The application is designed to preserve the original UI and user experience whil
 
 ## Live Demo
 
-The frontend is served locally and can also be deployed to static hosting or containerized environments.
+A local live demo is available from this workspace. Start both services in separate terminal windows:
+
+```bash
+python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000
+python -m http.server 8080
+```
+
+Then open the app in your browser at:
+
+- Frontend UI: `http://127.0.0.1:8080`
+- Backend health check: `http://127.0.0.1:8000/api/health`
+
+The frontend serves the static application while the backend provides the secure Gemini API proxy and health endpoint.
 
 ---
 
@@ -243,7 +255,7 @@ docker run -p 8000:8000 --env-file .env chefgen-ai
 
 ### AWS App Runner
 
-The repository includes `app-runner.yaml` for deployment-oriented configuration.
+The repository includes `app-runner.yaml` for AWS App Runner deployment configuration. This project is ready for container-based deployment once AWS credentials and application secrets are configured.
 
 ---
 

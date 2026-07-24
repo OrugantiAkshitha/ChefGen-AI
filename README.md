@@ -34,8 +34,8 @@ python -m http.server 8080
 
 Then open the app in your browser at:
 
-- Frontend UI: `http://127.0.0.1:8080`
-- Backend health check: `http://127.0.0.1:8000/api/health`
+- 🌐 Frontend UI: http://127.0.0.1:8080
+- 🌐 Backend health check: http://127.0.0.1:8000/api/health
 
 The frontend serves the static application while the backend provides the secure Gemini API proxy and health endpoint.
 
